@@ -23,6 +23,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
    FILES
    JointPosition.msg
+   JointVelocity.msg
    KinematicsPose.msg
    OpenManipulatorState.msg
  )
@@ -30,8 +31,10 @@ add_message_files(
 add_service_files(
    FILES
    GetJointPosition.srv
+   GetJointVelocity.srv
    GetKinematicsPose.srv
    SetJointPosition.srv
+   SetJointVelocity.srv
    SetKinematicsPose.srv
    SetDrawingTrajectory.srv
    SetActuatorState.srv
